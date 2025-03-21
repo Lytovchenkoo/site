@@ -104,15 +104,8 @@ textarea {
   resize: none;
 }
 
-.page {
-  display: grid;
-  grid-template-columns: 28px 1fr 30px 1fr 28px;
-  gap: 0;
-  width: auto;
-  box-sizing: border-box;
-}
 
-.container {
+.cont {
   margin-left: 28px;
   margin-right: 28px;
   box-sizing: border-box;
@@ -162,14 +155,14 @@ textarea {
     font-weight: 400;
   }
 
-  .container {
+  .cont {
     margin-left: 60px;
     margin-right: 60px;
   }
 }
 
 @media (min-width: 1920px) {
-  .container {
+  .cont {
     margin-left: 300px;
     margin-right: 300px;
   }
