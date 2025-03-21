@@ -1,0 +1,131 @@
+.resume {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--color-gray);
+}
+
+.resume__info {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.resume__experience {
+  background: var(--blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.resume__title {
+  margin-bottom: 2rem;
+}
+
+.resume__content {
+  display: flex;
+  text-align: left;
+  gap: 2rem;
+}
+
+.resume__column {
+  flex: 1;
+  position: relative;
+}
+
+.resume__period {
+  background: var(--blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.resume__section-title {
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--blue-gradient);
+  opacity: 0.3;
+}
+
+.timeline__item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline__marker {
+  position: absolute;
+  left: calc(-1.5rem - 6px + 1px);
+  top: 1.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--blue-gradient);
+  border: 2px solid var(--bg-color);
+}
+
+.card {
+  background: var(--color-black);
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.card__header {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  margin-bottom: 0.5rem;
+  color: var(--color-gray);
+}
+
+.card__subtitle {
+  color: var(--color-gray);
+  margin-bottom: 0.5rem;
+}
+
+.card__rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(148, 63, 247, 0.2);
+  color: var(--color-gray);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.card__text{
+  color: var(--color-gray);
+}
+
+.card__location {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+@media (max-width: 1440px) {
+  .resume__content {
+    flex-direction: column;
+  }
+
+  .resume__column {
+    margin-bottom: 2rem;
+  }
+}

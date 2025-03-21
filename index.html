@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExpertM5</title>
+
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div
+        data-hx-trigger="load"
+        data-hx-get="./partials/header-nav.partial.html"
+        data-hx-swap="outerHTML"
+      ></div>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/header-hero.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+    </header>
+
+    <main>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/points.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/resume.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/about.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/contact.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/platform.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/offer.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/features.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/offerings.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+      <div
+        data-hx-trigger="load"
+        data-hx-get="./partials/stats.partial.html"
+        data-hx-swap="outerHTML"
+      ></div>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/testimonial.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/pricing.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-get="./partials/clients.partial.html"
+        data-hx-swap="outerHTML"
+      ></section>
+    </main>
+    <footer
+      data-hx-trigger="load"
+      data-hx-get="./partials/footer.partial.html"
+      data-hx-swap="outerHTML"
+    ></footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

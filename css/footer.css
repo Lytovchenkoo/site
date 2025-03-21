@@ -1,0 +1,58 @@
+.footer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: linear-gradient(#1E2024, #23272B);
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+.footer__profile {
+  max-width: 250px;
+}
+.footer__name {
+  margin: 0 20px;
+  color: var(--color-gray);
+}
+
+.footer__role {
+  color: #aaa;
+  margin: 0 20px;
+  margin-bottom: 10px;
+}
+.footer__socials {
+  display: flex;
+  gap: 5px;
+}
+
+.footer__socials img {
+  width: 120px;
+}
+.footer__info {
+  display: flex;
+  gap: 40px;
+}
+
+.footer__details{
+    color: var(--color-gray);
+}
+
+.footer__details p {
+  margin: 5px 0;
+}
+.footer__details span{
+    text-transform: uppercase;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--color-gray);
+}

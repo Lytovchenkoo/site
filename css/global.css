@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-title: Inter;
+  --font-main: Finlandica;
+  --bg-color: #000;
+  --color-black: #181919;
+  --color-white: #ffffff;
+  --color-dark-gray: #878e99;
+  --color-gray: #c4cfde;
+  --blue-gradient: linear-gradient(#953ff7, #696bfc, #19c7fc);
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-white);
+  background-color: var(--bg-color);
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 56px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-gray);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 28px 1fr 30px 1fr 28px;
+  gap: 0;
+  width: auto;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: 28px;
+  margin-right: 28px;
+  box-sizing: border-box;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  color: var(--color-white);
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  background: linear-gradient(#953ff7, #696bfc, #19c7fc);
+}
+
+.button:hover {
+  background: linear-gradient(to right, #953ff7, #19c7fc);
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 70px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6,
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .container {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}

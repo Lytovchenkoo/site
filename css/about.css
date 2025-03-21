@@ -1,0 +1,16 @@
+.about {
+  background: linear-gradient(#1e2024, #23272b);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  color: var(--color-gray);
+  margin: 20px auto;
+}
