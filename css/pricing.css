@@ -1,15 +1,35 @@
 .pricing__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.pricing__title {
+.pricing__left {
   text-align: center;
+}
+
+.pricing__image {
+  margin: 2rem auto 0;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.pricing__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__title {
   margin-bottom: 2rem;
 }
 
-.pricing__title-label {
-  color: var(--blue-gradient);
+.pricing__subtitle {
+  color: #696bfc;
   text-transform: uppercase;
   margin-bottom: 0.3rem;
 }
@@ -26,7 +46,6 @@
   background-color: transparent;
   border: 1px solid #333;
   padding: 0.8rem 1.2rem;
-  font-size: 1rem;
   border-radius: 0.5rem;
   color: var(--color-gray);
   cursor: pointer;
@@ -34,7 +53,7 @@
 }
 
 .pricing__tab:hover {
-  background-color: #1e1e1e;
+  background: linear-gradient(#1e2024, #23272b);
 }
 
 .pricing__tab:active {
@@ -59,7 +78,7 @@
 }
 
 .pricing__card-title {
-  color: var(--color-white);
+  color: var(--color-gray);
   margin-bottom: 0.5rem;
 }
 
@@ -94,18 +113,29 @@
   color: var(--color-gray);
 }
 
-@media (min-width: 768px) {
-  .pricing__tabs {
+@media (min-width: 1024px) {
+  .pricing__container {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-  .pricing__features-list {
-    grid-template-columns: 1fr 1fr;
+  .pricing__left {
+    flex: 1;
+    text-align: left;
+  }
+
+  .pricing__right {
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  .pricing__tabs {
+    justify-content: flex-start;
+    flex-direction: row;
   }
 
   .pricing__card {
-    max-width: 700px;
-    margin: 0 auto;
+    width: 600px;
   }
 }
