@@ -6,7 +6,10 @@
 }
 
 .clients__subtitle {
-  color: #696bfc;
+  background: var(--blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-transform: uppercase;
 }
 

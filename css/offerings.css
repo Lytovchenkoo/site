@@ -15,7 +15,9 @@
 }
 
 .offerings_tagline {
-  color: #696bfc;
+  background: var(--blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .offering {
