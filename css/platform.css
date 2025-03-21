@@ -14,15 +14,12 @@
   overflow-x: hidden;
 }
 
-.platform__image img {
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.platform__image {
-  position: relative;
+.platform__image svg {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  max-width: 100%;
 }
 
 .platform__image-wrapper {

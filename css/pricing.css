@@ -12,6 +12,7 @@
 }
 
 .pricing__image {
+  display: none;
   margin: 2rem auto 0;
   max-width: 600px;
   width: 100%;
@@ -138,5 +139,9 @@
 
   .pricing__card {
     width: 600px;
+  }
+
+  .pricing__image{
+    display: flex;
   }
 }
