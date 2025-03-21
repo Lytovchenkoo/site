@@ -72,3 +72,7 @@
   background-color: var(--blue-gradient);
   transform: scale(1.3);
 }
+
+.p-4 {
+  width: 90%;
+}

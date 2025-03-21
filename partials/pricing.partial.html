@@ -1,55 +1,16 @@
 <section class="pricing">
-  <div class="pricing__container cont">
+  <div class="pricing__container">
+    <h4 class="pricing__title-label">Pricing</h4>
     <h2 class="pricing__title">My Pricing</h2>
 
     <div class="pricing__tabs">
-      <button class="pricing__tab pricing__tab--active" data-tab="static">
+      <button class="pricing__tab pricing__tab--active" data-plan="static">
         Static
       </button>
-      <button class="pricing__tab" data-tab="standard">Standard</button>
-      <button class="pricing__tab" data-tab="premium">Premium</button>
+      <button class="pricing__tab" data-plan="standard">Standard</button>
+      <button class="pricing__tab" data-plan="premium">Premium</button>
     </div>
 
-    <div class="pricing__cards">
-      <div class="pricing__card pricing__card--active" data-tab="static">
-        <h3 class="pricing__card-title">Static Plan</h3>
-        <p class="pricing__card-subtitle">Basic features for small projects.</p>
-        <ul class="pricing__features">
-          <li class="pricing__feature">✔ Feature One</li>
-          <li class="pricing__feature">✔ Feature Two</li>
-        </ul>
-        <div class="pricing__price">$29.59</div>
-        <button class="pricing__btn">Order Now</button>
-      </div>
-
-      <div class="pricing__card" data-tab="standard">
-        <h3 class="pricing__card-title">Standard Plan</h3>
-        <p class="pricing__card-subtitle">
-          Advanced features for growing businesses.
-        </p>
-        <ul class="pricing__features">
-          <li class="pricing__feature">✔ Feature One</li>
-          <li class="pricing__feature">✔ Feature Two</li>
-          <li class="pricing__feature">✔ Feature Three</li>
-        </ul>
-        <div class="pricing__price">$49.99</div>
-        <button class="pricing__btn">Order Now</button>
-      </div>
-
-      <div class="pricing__card" data-tab="premium">
-        <h3 class="pricing__card-title">Premium Plan</h3>
-        <p class="pricing__card-subtitle">
-          All features for maximum performance.
-        </p>
-        <ul class="pricing__features">
-          <li class="pricing__feature">✔ Feature One</li>
-          <li class="pricing__feature">✔ Feature Two</li>
-          <li class="pricing__feature">✔ Feature Three</li>
-          <li class="pricing__feature">✔ Feature Four</li>
-        </ul>
-        <div class="pricing__price">$79.99</div>
-        <button class="pricing__btn button">Order Now</button>
-      </div>
-    </div>
+    <div class="pricing__card" id="pricing-card"></div>
   </div>
 </section>
